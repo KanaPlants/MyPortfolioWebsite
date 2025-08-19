@@ -1,0 +1,195 @@
+/* -----------------------HEADER----------------------- */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(21, 21, 21);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+a:hover {
+    color: #bebebe;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    position: fixed;
+  
+}
+
+.logo {
+    padding: 0.3em 0 0;
+    height: 112px;
+    transition: 0.4s ease;
+}
+
+.logoCont {
+    width: 20em;
+}
+
+.navbar {
+    padding: 0 2em;
+    width: 100%;
+    height: 122px;
+    background-color: rgb(22, 22, 22, 0.8);
+    background-image: linear-gradient(180deg, #0909097a, rgba(37, 37, 37, 0));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s ease;
+}
+
+.navbar .logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2em;
+    /* this is for the position of the link elements */
+    transform: translateX(-7.65em); 
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: rgb(95, 104, 112);
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/* DROWDOWN MENU */
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2em;
+    top: 122px;
+    width: 19em;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 220px;
+}
+
+.dropdown_menu li {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media  (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2em;
+        width: unset;
+    }
+}
+
+
+
+/* -----------------------FOOTER----------------------- */
+.footer {
+    z-index: -1;
+    width: 100%;
+    background-color: hsl(0, 0%, 6%);
+    background-image: linear-gradient(180deg, #090909, #161616);
+    height: 8.75em;
+    margin-top: 7.5em;
+    
+}
+
+.footerItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 3em;
+}
+
+
+.social-icons {
+    height: auto;
+    width: 1.4em;
+    margin: 0 .5em 1.5em;
+}
+
+.social-icons:hover {
+    transform: scale(1.05);
+}
+
+.footerCenter {
+    justify-items: center;
+    margin: 0 3em 0;
+}
+
+.footerStar img{
+    height: 1.2em; 
+    width: 1.2em;
+}
