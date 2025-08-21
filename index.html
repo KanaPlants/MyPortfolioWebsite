@@ -20,7 +20,7 @@
 </head>
 
 <body>
-   <!-- ---------------Header--------------- -->
+    <!-- ---------------Header--------------- -->
     <header>
         <div class="navbar">
             <div class="logoCont">
@@ -84,7 +84,11 @@
                 <!-- <hr class="sb-devider"> -->
             </div>
 
-            <img class="ch-sheets" src="/Assets/WebsiteAssets/Ch Sheet.webp" alt="cat character sheet">
+            <picture>
+                <source class="ch-sheets" type="image/webp" srcset="../Assets/WebsiteAssets/Cat_chSheet.webp">
+                <img class="ch-sheets" loading="lazy" src="../Assets/WebsiteAssets/Cat_chSheet.png"
+                    alt="Cat Character Sheet">
+            </picture>
 
             <div class="sb-text">
 
@@ -115,7 +119,14 @@
                 </div>
                 <!-- <hr class="sb-devider"> -->
             </div>
-            <img class="ch-sheets" src="/Assets/WebsiteAssets/clown_chSheet.webp" alt="clown character sheet">
+            <!-- <img class="ch-sheets" src="../Assets/WebsiteAssets/clown_chSheet.webp" alt="clown character sheet"> -->
+
+            <picture>
+                <source class="ch-sheets" type="image/webp" srcset="../Assets/WebsiteAssets/clown_chSheet.webp">
+                <img class="ch-sheets" loading="lazy" src="../Assets/Illustrations/clown_chSheet.png"
+                    alt="Clown Character Sheet">
+            </picture>
+
             <div class="sb-text">
                 <p>
                     A charming clown lures people into her circus, to add them to the ever growing clown family.
@@ -145,11 +156,13 @@
                 <!-- <hr class="sb-devider"> -->
             </div>
 
-            <img class="ch-sheets" src="/Assets/WebsiteAssets/pearl_chSheet.webp" alt="pearl character sheet">
+            <picture>
+                <source class="ch-sheets" type="image/webp" srcset="../Assets/WebsiteAssets/pearl_chSheet.webp">
+                <img class="ch-sheets" loading="lazy" src="../Assets/WebsiteAssets/pearl_chSheet.png"
+                    alt="Pearl Character Sheet">
+            </picture>
+
             <div class="sb-text">
-                <!-- <h3>
-                    Test the Storm
-                </h3> -->
                 <p>
                     Made for the 2024 Chroma Corps art bootcamp, with the prompt "A Soft Landing"
                     <br>Made in one day, with a few hours of additional cleanup after.
@@ -205,22 +218,39 @@
 
                         <div>
                             <div style="display: contents;" class="mySlides">
-                                <img src="../Assets/BeatBoards/1. Leaving the house.webp" style="width:100%"
-                                    loading="lazy">
+                                <picture>
+                                    <source style="width:100%;" type="image/webp" srcset="../Assets/BeatBoards/1.LeavingTheHouse.webp">
+                                    <img style="width:100%" loading="lazy" src="../Assets/BeatBoards/1.LeavingTheHouse.png"
+                                        alt="Leaving The House: Beatboards1">
+                                </picture>
                             </div>
                             <div class="mySlides">
-                                <img src="../Assets/BeatBoards/2. Flowers memories.webp" style="width:100%"
-                                    loading="lazy">
+                                <picture>
+                                    <source style="width:100%;" type="image/webp" srcset="../Assets/BeatBoards/2.FlowerMemories.webp">
+                                    <img style="width:100%" loading="lazy" src="../Assets/BeatBoards/2.FlowerMemories.png"
+                                        alt="Flower Memories: Beatboards2">
+                                </picture>
                             </div>
                             <div class="mySlides">
-                                <img src="../Assets/BeatBoards/3. Fallen friend.webp" style="width:100%" loading="lazy">
+                                <picture>
+                                    <source style="width:100%;" type="image/webp" srcset="../Assets/BeatBoards/3.FallenFriend.webp">
+                                    <img style="width:100%" loading="lazy" src="../Assets/BeatBoards/3.FallenFriend.png"
+                                        alt="Fallen Friend: Beatboards3">
+                                </picture>
                             </div>
                             <div class="mySlides">
-                                <img src="../Assets/BeatBoards/4. Lonely class.webp" style="width:100%" loading="lazy">
+                                <picture>
+                                    <source style="width:100%;" type="image/webp" srcset="../Assets/BeatBoards/4.LonelyClass.webp">
+                                    <img style="width:100%" loading="lazy" src="../Assets/BeatBoards/4.LonelyClass.png"
+                                        alt="Lonely Class: Beatboards4">
+                                </picture>
                             </div>
                             <div class="mySlides">
-                                <img src="../Assets/BeatBoards/5. Making a friend.webp" style="width:100%"
-                                    loading="lazy">
+                                <picture>
+                                    <source style="width:100%;" type="image/webp" srcset="../Assets/BeatBoards/5.MakingAFriend.webp">
+                                    <img style="width:100%" loading="lazy" src="../Assets/BeatBoards/5.MakingAFriend.png"
+                                        alt="Making a Friend: Beatboards5">
+                                </picture>
                             </div>
                         </div>
 
@@ -342,5 +372,3 @@
 </body>
 
 </html>
-
-
