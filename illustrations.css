@@ -13,7 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 
-
+/*---------------------------------------------*/
 
 .gallery img {
   width: 100%;
@@ -44,4 +44,3 @@ img:hover {
     max-width: none;
   }
 }
-
