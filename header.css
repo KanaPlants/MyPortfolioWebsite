@@ -30,6 +30,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1;
+  
 }
 
 .logo {
@@ -63,7 +64,7 @@ header {
     display: flex;
     gap: 2em;
     /* this is for the position of the link elements */
-    transform: translateX(-7.65em); 
+    transform: translateX(-8em); 
 }
 
 .navbar .toggle_btn{
